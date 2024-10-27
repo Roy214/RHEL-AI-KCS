@@ -24,4 +24,11 @@ seed_examples:
           What are the components include in RHEL AI?
         answer: |
           RHEL AI includes Granite models, RHEL Image mode(bootc), vLLM, Deepspeed, pytorch.
+document_outline: |
+  This repo will be used to train model which can cater known issues in RHEL AI.
+document:
+  repo: https://github.com/Roy214/RHEL-AI-KCS
+  commit: c87a82eb15567f28c0a8d30025e0cd77a2150646
+  patterns:
+    - main.md
       
