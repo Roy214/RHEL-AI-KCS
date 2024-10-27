@@ -1,0 +1,27 @@
+version: 3
+domain: astronomy
+created_by: Roy214
+seed_examples:
+  - context: |
+      **RHEL AI** Red Hat Enterprise Linux AI is a foundation model platform to seamlessly develop, test, and run Granite family large language models (LLMs) for enterprise applications.
+      RHEL AI is an open-source product that includes:
+      Granite: an open source, Apache 2 licensed foundation model from IBM.
+      InstructLab: a CLI and tuning backend that provides a simple user interface for contributing knowledge and skills to a base model.
+      RHEL Image Mode (bootc): RHEL AI is distributed as a “bootable container” image. Provision RHEL AI appliances via kickstart onto bare metal or cloud instances.
+      vLLM: A high-throughput and memory-efficient inference and serving engine for LLMs, based on PyTorch.
+      deepspeed: A deep learning optimization software suite for both training and inference.
+      PyTorch: PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.
+    questions_and_answers:
+      - question: |
+          What is RHEL AI?
+        answer: |
+          Red Hat Enterprise Linux AI is a foundation model platform to seamlessly develop, test, and run Granite family large language models for enterprise applications.
+      - question: |
+          Why RHEL AI?
+        answer: |
+          RHEL AI provides the ability for domain experts, not just data scientists, to contribute to a built-for-purpose gen AI model across the hybrid cloud.
+      - question: |
+          What are the components include in RHEL AI?
+        answer: |
+          RHEL AI includes Granite models, RHEL Image mode(bootc), vLLM, Deepspeed, pytorch.
+      
