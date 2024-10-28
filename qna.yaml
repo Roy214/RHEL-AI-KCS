@@ -28,5 +28,5 @@ document_outline: |
   This repo will be used to train model which can cater known issues in RHEL AI.
 document:
   repo: https://github.com/Roy214/RHEL-AI-KCS
-  commit: e6905d2d4ea0e3a5d66f25aa84bbd0310a3ac3de
+  commit: 7e7eda5
       
