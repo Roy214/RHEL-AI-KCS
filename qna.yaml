@@ -9,22 +9,31 @@ seed_examples:
           What is RHEL AI?
         answer: |
           RHEL AI is an open source platform for building, training, testing, and serving models for your own AI-enabled applications.
+      - question: |
+          What model is used by RHEL AI?
+        answer: |
+          Granite Model.
+      - question: |
+          What the full form of LLM?
+        answer: |
+          large language models.
   - context: |
-      Red Hat Enterprise Linux AI brings together:
-      The Granite family of open source-licensed LLMs, distributed under the Apache-2.0 license with complete transparency on training datasets.
+      Red Hat Enterprise Linux AI brings together the Granite family of open source-licensed LLMs, distributed under the Apache-2.0 license with complete transparency on training dataset.Red Hat Enterprise Linux AI allows you to do the host an LLM and interact with the open source Granite family of Large Language Models (LLMs) using the LAB method, create and add your own knowledge data in a Git repository and fine-tune a model with that data with minimal machine learning background interact with the model that has been fine-tuned with your data.
     questions_and_answers:
+      - question: |
+          Can I host my own LLM using RHEL AI?
+        answer: |
+          Yes.
+      - question: |
+          Is Granite model open-source?
+        answer: |
+          Yes.
       - question: |
           What is license used in RHEL AI?
         answer: |
           Apache-2.0.
   - context: |
-        RHEL AI consists of Instruct Lab, bootc image, granite models and Enterprise-grade technical support and Open Source Assurance legal protections..
-        
-        InstructLab model alignment tools, which open the world of community-developed LLMs to a wide range of users.
-        
-        A bootable image of Red Hat Enterprise Linux, including popular AI libraries such as PyTorch and hardware optimized inference for NVIDIA, Intel, and AMD.
-        
-        Enterprise-grade technical support and Open Source Assurance legal protections.
+        RHEL AI consists of Instruct Lab, bootc image, granite models and Enterprise-grade technical support and Open Source Assurance legal protections.InstructLab model alignment tools, which open the world of community-developed LLMs to a wide range of users.A bootable image of Red Hat Enterprise Linux, including popular AI libraries such as PyTorch and hardware optimized inference for NVIDIA, Intel, and AMD.Enterprise-grade technical support and Open Source Assurance legal protections.
     questions_and_answers:
       - question: |
           What are the components of RHEL AI?
@@ -40,7 +49,28 @@ seed_examples:
           What RHEL AI offers you?
         answer: |
           Red Hat Enterprise Linux AI is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs).
-          
+      - question: |
+          Can I create a chatbot using RHEL AI?
+        answer: |
+          Yes.
+      - question: |
+          Can I finetune the model RHEL AI?
+        answer: |
+          Yes.
+  - context: |
+        InstructLab is an open source AI project that facilitates contributions to Large Language Models (LLMs). RHEL AI takes the foundation of the InstructLab project and builds an enterprise platform for LLM integration on applications. Red Hat Enterprise Linux AI targets high performing server platforms with dedicated Graphic Processing Units (GPUs). InstructLab is intended for small scale platforms, including laptops and personal computers.InstructLab implements the LAB (Large-scale Alignment for chatBots) technique, a novel synthetic data-based fine-tuning method for LLMs. The LAB process consists of several components A taxonomy-guided synthetic data generation process,A multi-phase training process,A fine-tuning framework.RHEL AI and InstructLab allow you to customize an LLM with domain-specific knowledge for your distinct use case.
+      - question: |
+          What is iLab?
+        answer: |
+          InstructLab is an open source AI project that facilitates contributions to Large Language Models (LLMs)..
+      - question: |
+          RHEL AI vs InstructLab?
+        answer: |
+          RHEL AI takes the foundation of the InstructLab project and builds an enterprise platform for LLM integration on applications.
+      - question: |
+          What are the components of LAB?
+        answer: |
+          The LAB process consists of several components A taxonomy-guided synthetic data generation process,A multi-phase training process,A fine-tuning framework.
 document_outline: |
   This repo will be used to train model which can cater known issues in RHEL AI..
 document:
