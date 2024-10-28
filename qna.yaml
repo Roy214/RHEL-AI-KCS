@@ -1,32 +1,50 @@
 version: 3
-domain: astronomy
-created_by: Roy214
+domain: Tech
+created_by: Roy
 seed_examples:
   - context: |
-      **RHEL AI** Red Hat Enterprise Linux AI is a foundation model platform to seamlessly develop, test, and run Granite family large language models (LLMs) for enterprise applications.
-      RHEL AI is an open-source product that includes:
-      Granite: an open source, Apache 2 licensed foundation model from IBM.
-      InstructLab: a CLI and tuning backend that provides a simple user interface for contributing knowledge and skills to a base model.
-      RHEL Image Mode (bootc): RHEL AI is distributed as a “bootable container” image. Provision RHEL AI appliances via kickstart onto bare metal or cloud instances.
-      vLLM: A high-throughput and memory-efficient inference and serving engine for LLMs, based on PyTorch.
-      deepspeed: A deep learning optimization software suite for both training and inference.
-      PyTorch: PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.
+      Red Hat Enterprise Linux AI is a foundation model platform to seamlessly develop, test, and run Granite family large language models (LLMs) for enterprise applications.
     questions_and_answers:
       - question: |
           What is RHEL AI?
         answer: |
-          Red Hat Enterprise Linux AI is a foundation model platform to seamlessly develop, test, and run Granite family large language models for enterprise applications.
+          RHEL AI is an open source platform for building, training, testing, and serving models for your own AI-enabled applications.
+  - context: |
+      Red Hat Enterprise Linux AI brings together:
+      The Granite family of open source-licensed LLMs, distributed under the Apache-2.0 license with complete transparency on training datasets.
+    questions_and_answers:
       - question: |
-          Why RHEL AI?
+          What is license used in RHEL AI?
         answer: |
-          RHEL AI provides the ability for domain experts, not just data scientists, to contribute to a built-for-purpose gen AI model across the hybrid cloud.
+          Apache-2.0.
+  - context: |
+        RHEL AI consists of Instruct Lab, bootc image, granite models and Enterprise-grade technical support and Open Source Assurance legal protections..
+        
+        InstructLab model alignment tools, which open the world of community-developed LLMs to a wide range of users.
+        
+        A bootable image of Red Hat Enterprise Linux, including popular AI libraries such as PyTorch and hardware optimized inference for NVIDIA, Intel, and AMD.
+        
+        Enterprise-grade technical support and Open Source Assurance legal protections.
+    questions_and_answers:
       - question: |
-          What are the components include in RHEL AI?
+          What are the components of RHEL AI?
         answer: |
-          RHEL AI includes Granite models, RHEL Image mode(bootc), vLLM, Deepspeed, pytorch.
+          Instruct Lab, bootc image, granite models and Enterprise-grade technical support and Open Source Assurance legal protections.
+  - context: |
+        Red Hat Enterprise Linux AI allows you to do the following:
+        Host an LLM and interact with the open source Granite family of Large Language Models (LLMs).
+        Using the LAB method, create and add your own knowledge data in a Git repository and fine-tune a model with that data with minimal machine learning background.
+        Interact with the model that has been fine-tuned with your data.
+    questions_and_answers:
+      - question: |
+          What RHEL AI offers you?
+        answer: |
+          Red Hat Enterprise Linux AI is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs).
+          
 document_outline: |
-  This repo will be used to train model which can cater known issues in RHEL AI.
+  This repo will be used to train model which can cater known issues in RHEL AI..
 document:
   repo: https://github.com/Roy214/RHEL-AI-KCS
-  commit: 7e7eda5
-      
+  commit: 113bb01f89e2711038675dc2780840aad6e732dd
+  patterns:
+    - data.md
