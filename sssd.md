@@ -4,9 +4,6 @@ SSSD is an acronym for System Security Services Daemon. It is the client compone
 ## Why do you need SSSD
 Did you ever wonder how the same login works on all of the computers in the school lab? That’s because they are joined to a domain that’s part of an identity management solution. A centralized, redundant, and secure set of servers to manage users, groups, policies and more.
 
-## Understanding SSSD and its benefits
-The System Security Services Daemon (SSSD) is a system service to access remote directories and authentication mechanisms. The following chapters outline how SSSD works, what are the benefits of using it, how the configuration files are processed, as well as what identity and authentication providers you can configure.
-
 ## How SSSD works 
 
 The System Security Services Daemon (SSSD) is a system service that allows you to access remote directories and authentication mechanisms. You can connect a local system, an SSSD client, to an external back-end system, a provider.
