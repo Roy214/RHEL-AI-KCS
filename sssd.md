@@ -52,7 +52,8 @@ Beside FreeIPA and Active Directory, SSSD can also integrate to other identity s
 Simply put, the main SSSD purpose is to store data from the remote database in a local cache and then serve this data to the target user (application). Keeping the cache up to date and valid is a difficult task and to do that SSSD consists of multiple components (processes and libraries) that talk to each other through various inter-process communication techniques. 
 
 ## How can I use sssd to integrate with AD.
-You need to use `adcli` or `realmd` to integrate a Linux machine with AD the command is `realm join domain_name -U aduser`
+You need to use `adcli` or `realmd` to integrate a Linux machine with AD the command is `realm join domain_name -U aduser`. When troubleshooting AD join issues alternatively try using --membership-software=samba or adcli and compare which provides better error msg. 
+Some common issues are `The domain join failed with an error msg Do you have sufficient permissions to create machine accounts` this indicates you do not have correct permission to join the active directory domain for details refer to https://access.redhat.com/articles/7075917
 
 ## How can start sssd
 `systemctl start sss` in case if you are failing to start sssd try to start sssd in debug mode using `sssd -i d7` here you can serach for errors.Troubleshoot sssd failure or failed to start sssd involves several steps first try to start sssd in debug mode using `sssd -i d7`. Some comon issue related to sssd start up involves `krb5_kt_start_seq_get failed: Key table file /etc/krb5.keytab not found` which indicates the keytab file is absent. Check using `klist -kte` if you have the keytab file. `sssd.service: main process exited, code=exited, status=4/NOPERMISSION` indicates sssd is failing to start due to permission issues check if you have proper permisison set on sssd.conf it should be owned by root and permission should be 600. 
@@ -84,7 +85,7 @@ Unless the problem you’re trying to diagnose is related to enumeration, always
 ## Troubleshooting Backend
 A backend, often also called data provider, is an SSSD child process. This process talks to LDAP server, performs different lookup queries and stores the results in the cache. The SSSD Cache is a local database containing identity and authentication information which may be reused later to speed up answering client queries. SSSD backend also performs online authentication against LDAP or Kerberos and applies access and password policy to the user that is about to log in.
 
-## SSD process is terminated by own WATCHDOG
+## SSSD process is terminated by own WATCHDOG
 
 (Fri Apr 14 15:07:19 2023) system1 sssd[sssd]: Child [1277] ('SSSDdomain':'%BE_SSSDdomain') was terminated by own WATCHDOG. Consult corresponding logs to figure out the reason.
 
